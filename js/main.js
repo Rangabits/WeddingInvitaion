@@ -8,7 +8,7 @@ var hexagon_radius = 50;
 var hexagon_max_absolute_speed = 0.1;
 var hexagon_space_between = 2;
 var hexagon_line_width = 1;
-var hexagon_color = 'cyan';
+var hexagon_color = '#FFD700';
 
 /*
 ░█▀▀█ ░█▀▀▀█ ░█▀▀▄ ░█▀▀▀ 
@@ -22,7 +22,7 @@ var hexagons = [];
 
 var s3p3 = Math.sqrt(3);
 
-function init() {
+function canv_load() {
 	
 	canvas = document.getElementById('c');
 	canvas.width = window.innerWidth;
@@ -55,6 +55,7 @@ function init() {
 function loop() {
 	requestAnimFrame(loop);
 	
+    ctx.globalAlpha=0.40;
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.fillStyle = '#003300';
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -132,7 +133,8 @@ function drawHexagonPath(hex_index) {
 }
 
 window.onload = function() {
-	init();
+    // setBackground();
+    canv_load();
 };
 
 window.requestAnimFrame = (function(){
