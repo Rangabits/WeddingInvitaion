@@ -24,14 +24,14 @@ var hexagons = [];
 
 var s3p3 = Math.sqrt(3);
 
-var w=0;
+/*var w=0;
 window.onload=function(){
 w = winWidth;
 }
 window.onresize = function(){ 
 if(winWidth!=w-10){ //10 is the change of width after it refresh the page){
-location.reload(); }
-}
+location.reload(true); }
+}*/
 
 function canv_load() {
 	
@@ -41,7 +41,7 @@ function canv_load() {
 	canvas.style.width = canvas.width + 'px';
 	canvas.style.height = canvas.height + 'px';
 	ctx = canvas.getContext('2d');
-	
+				
 	ctx.globalCompositeOperation = "source-over";
 	
 	var hw = Math.ceil( canvas.width / ( 1.5 * hexagon_radius + hexagon_space_between * 2 ) ) + 1;
@@ -60,7 +60,6 @@ function canv_load() {
 	ctx.lineWidth = hexagon_line_width;
 	
 	loop();
-	
 } 
 
 function loop() {
