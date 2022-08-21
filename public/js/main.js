@@ -9,6 +9,8 @@ var hexagon_max_absolute_speed = 0.1;
 var hexagon_space_between = 2;
 var hexagon_line_width = 1;
 var hexagon_color = '#FFD700';
+var winWidth = window.innerWidth;
+var winHeight = window.innerHeight;
 
 /*
 ░█▀▀█ ░█▀▀▀█ ░█▀▀▄ ░█▀▀▀ 
@@ -22,11 +24,20 @@ var hexagons = [];
 
 var s3p3 = Math.sqrt(3);
 
+var w=0;
+window.onload=function(){
+w = winWidth;
+}
+window.onresize = function(){ 
+if(winWidth!=w-10){ //10 is the change of width after it refresh the page){
+location.reload(); }
+}
+
 function canv_load() {
 	
 	canvas = document.getElementById('c');
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
+	canvas.width =  winWidth; // window.innerWidth;
+	canvas.height = winHeight; // window.innerHeight;
 	canvas.style.width = canvas.width + 'px';
 	canvas.style.height = canvas.height + 'px';
 	ctx = canvas.getContext('2d');
