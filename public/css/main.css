@@ -1,11 +1,11 @@
 @import "https://cdn.jsdelivr.net/npm/add-to-calendar-button/assets/css/atcb.min.css";
 @import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
 @import "https://fonts.googleapis.com/css?family=Cabin:400";
+@import "https://fonts.googleapis.com/css?family=Alex Brush";
 
 * {
   box-sizing: border-box;
 }
-
 
 html {
   background: #ffffff;
@@ -41,7 +41,7 @@ body{
 
  #left_name{
   font-size: 50px;
-  font-family: "Monotype Corsiva", serif;
+  font-family: "Alex Brush", sans-serif;
   color:#1548BF;
   font-size: 5rem;
   font-weight: bold;
@@ -51,7 +51,7 @@ body{
 
  #mid_name{
   font-size: 40px;
-  font-family: "Monotype Corsiva", serif;
+  font-family: "Alex Brush", sans-serif;
   color:#1548BF;
   font-size: 2.8rem;
   font-weight: bold;
