@@ -2,11 +2,34 @@
 @import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
 @import "https://fonts.googleapis.com/css?family=Cabin:400";
 
-html,body{margin: 0;overflow:hidden;}
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  background: #ffffff;
+  background-size: cover;
+  font-size: 10px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+
+body{
+  margin: 0;
+  overflow:hidden;
+  background-size: cover;
+}
+
 #c{
     position:absolute;
     left:0;
-    top:0;
+    top:0;    
  }
  
  #content{
@@ -14,7 +37,6 @@ html,body{margin: 0;overflow:hidden;}
     padding-top: 2%;
     text-align: center;
  }
-
 
  #left_name{
   font-size: 50px;
@@ -52,18 +74,6 @@ section {
   padding: 10px;
 }
 
-html {
-  background: #ffffff;
-  background-size: cover;
-  font-size: 10px;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-
 h1 {
   animation: text-glow 2s ease-out infinite alternate;
   font-family: 'Ubuntu', sans-serif;
@@ -82,10 +92,12 @@ h2 {
   font-size: 25px;
   position: center;
 }
-h3 {
+
+#matter {
   font-family: 'Ubuntu', sans-serif;
   color: blue;
   font-size: 20px; 
+  padding-top: 8;
 }
 
 h1:before {
