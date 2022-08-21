@@ -10,7 +10,7 @@
 html {
   background: #ffffff;
   background-size: cover;
-  font-size: 10px;
+  font-size: 20px;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -46,7 +46,7 @@ body{
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
-  padding: 10 0 0 0;
+  padding: 100 0 0 0;
  }
 
  #mid_name{
@@ -61,7 +61,7 @@ body{
 
  #right_name{
   font-size: 50px;
-  font-family: "Monotype Corsiva", serif;
+  font-family: "Alex Brush", sans-serif;
   color:#1548BF;
   font-size: 5rem;
   font-weight: bold;
@@ -70,9 +70,9 @@ body{
  }
 
 section {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0;
 }
 
 h1 {
@@ -80,7 +80,7 @@ h1 {
   font-family: 'Ubuntu', sans-serif;
   color: #b2b19d;
   font-size: 48px;
-  font-size: 4.8rem;
+  font-size: 5.2rem;
   font-weight: bold;
   position: center;
   /*text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
@@ -91,14 +91,14 @@ h2 {
   font-family: 'Ubuntu', sans-serif;
   color: blue;
   font-size: 25px;
+  font-size: 3.2rem;
   position: center;
 }
 
 #matter {
   font-family: 'Ubuntu', sans-serif;
   color: blue;
-  font-size: 20px; 
-  padding-top: 8;
+  font-size: 2.0rem;
 }
 
 h1:before {
@@ -107,6 +107,10 @@ h1:before {
 h1:after {
   animation: after-glow 2s ease-out infinite alternate;
   right: -85px;
+}
+
+#space{
+  padding-top: 10;
 }
 
 /* =========================================
@@ -125,11 +129,11 @@ Log in form
   box-shadow: 0 0 15px #00fffd;
   border-radius: 5px;
   display: inline-block;
-  height: 670px;
+  height: 1400px;
   margin: 0px auto 0;
   position: relative;
   z-index: 4;
-  width: 400px;
+  width: 850px;
   transition: 1s all;
 }
 
@@ -199,14 +203,14 @@ Animation Keyframes
   }
   40% {
     width: 0;
-    height: 670px;
+    height: 1400px;
     border: 6px solid #00a4a2;
     opacity: 1;
     padding: 0;
   }
   100% {
-    height: 670px;
-    width: 400px;
+    height: 1400px;
+    width: 850px;
   }
 }
 @keyframes box-glow {
